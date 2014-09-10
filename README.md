@@ -1,4 +1,4 @@
-This sole purpose of this app is to allow users to create quick quizzes comprising of objective questions without getting bothered about HTML aspect. In its current version, objective questions with just one answers is supported. In future versions, there will be support for multiple currect answers out of given options. 
+The sole purpose of this app is to allow users to create quick quizzes comprising of objective questions without getting bothered about HTML aspect. In its current version, objective questions with just one answers is supported. In future versions, there will be support for multiple currect answers out of given options. 
 
 It uses the AngularJS extensively to achieve the above objective. Following are key directives that are used to create the quiz:
 
