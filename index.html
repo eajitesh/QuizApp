@@ -88,8 +88,8 @@
 <a name="installation-instructions" class="anchor" href="#installation-instructions"><span class="octicon octicon-link"></span></a>Installation Instructions</h3>
 
 <ul>
-<li>Download the zip file, unzip it,</li>
-<li>Following are different files that could be found:
+<li>Download the zip file, unzip it.</li>
+<li>Following are different files that could be found within the root/src folder:
 
 <ul>
 <li>quizapp-v0.2.js: This file consists of actual AngularJS code including directives</li>
@@ -99,6 +99,7 @@
 <li>templates/scorecard.html: This file is a template to display scorecard.</li>
 </ul>
 </li>
+<li>Copy all of the files from "src" folder to another folder, say, "quizapp" within your project and get started.</li>
 <li>Include following angularjs script files. You may want to load the files from <a href="https://developers.google.com/speed/libraries/devguide#angularjs" target="_blank">Google Hosted Libraries</a>.
 
 <ul>
@@ -107,6 +108,18 @@
 </ul>
 </li>
 <li>Include bootstrap CSS library. This would make sure that the templates display neat looking HTML blocks. You may change classes in the template files to display the template differently. You may want to use <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" target="_blank">Bootstrap CDN link</a> in your page.</li>
+<li>Include following CSS and script files within your HTML  section. Script files can as well be added within BODY section for performance reasons.
+
+<ul>
+<li><code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt;</code></li>
+<li><code>&lt;script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"&gt;&lt;/script&gt;</code></li>
+<li><code>&lt;script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-sanitize.min.js"&gt;&lt;/script&gt;</code></li>
+<li>
+<code>&lt;script src="quizapp/quizapp-v0.2.js"&gt;&lt;/script&gt;</code>. The assumption is that you have copied the downloaded file within <strong>quizapp</strong> folder as instructed above.</li>
+<li>
+<code>&lt;script src="quizapp/ui-bootstrap-tpls-0.9.0.min.js"&gt;&lt;/script&gt;</code>. The assumption is that you have copied the downloaded file within <strong>quizapp</strong> folder as instructed above.</li>
+</ul>
+</li>
 <li>In the page, you want to use the module, define the angular app with QuizApp as dependency. The code would look like following:
 <code>angular.module( "HelloApp", ["QuizApp"] );</code>
 </li>
@@ -118,6 +131,14 @@
 <li>iscorecard</li>
 </ul>
 </li>
+</ul><h3>
+<a name="quickstart" class="anchor" href="#quickstart"><span class="octicon octicon-link"></span></a>QuickStart</h3>
+
+<ul>
+<li>Create a quizdemo folder</li>
+<li>Place samplequiz.html file (downloaded as zip) within it.</li>
+<li>Create quizapp folder and place entire js &amp; templates files (found within src folder;downloaded as zip) within this folder.</li>
+<li>Access samplequiz.html file in a browser.</li>
 </ul>
         </section>
 
