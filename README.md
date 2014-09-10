@@ -51,13 +51,14 @@ Directive iscorecard is used to display the scores and correct answers. It just 
 
 ### Installation Instructions
 
-* Download the zip file, unzip it,
-* Following are different files that could be found:
+* Download the zip file, unzip it.
+* Following are different files that could be found within the root/src folder:
   * quizapp-v0.2.js: This file consists of actual AngularJS code including directives
   * ui-bootstrap-tpls-0.9.0.min.js: This is included as dependency of QuizApp to style the templates using Bootstrap library. 
   * templates/quiz.html: This file is a template to display iquiz directive.
   * templates/question.html: This file is a template to display iquestion directive.
   * templates/scorecard.html: This file is a template to display scorecard.
+* Copy all of the files from "src" folder to another folder, say, "quizapp" within your project and get started.
 * Include following angularjs script files. You may want to load the files from <a href="https://developers.google.com/speed/libraries/devguide#angularjs" target="_blank">Google Hosted Libraries</a>.
   * angular.min.js
   * angular-sanitize.min.js
