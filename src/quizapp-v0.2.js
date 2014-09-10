@@ -1,4 +1,4 @@
-var quizApp = angular.module("quizApp", [ 'ngSanitize', 'ui.bootstrap' ]);
+var quizApp = angular.module("QuizApp", [ 'ngSanitize', 'ui.bootstrap' ]);
 
 quizApp.service("QuizService", function() {
   return new Quiz();
@@ -47,7 +47,7 @@ quizApp.directive("iquiz", function() {
 		},
 		controller : function($scope) {
 		},
-		templateUrl : 'templates/quiz.html'
+		templateUrl : currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + 'templates/quiz.html'
 	};
 });
 
@@ -87,7 +87,7 @@ quizApp.directive("iscorecard", [ 'QuizService', function( QuizService ) {
 				scope.correctAnswers =  QuizService.correctAnswers;
 			});
 		},
-		templateUrl : 'templates/scorecard.html'
+		templateUrl : currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + 'templates/scorecard.html'
 	};
 }]);
 
@@ -168,11 +168,9 @@ quizApp.directive("iquestion", [ 'QuizService', function( QuizService ) {
 			scope.$watch(function() {
 				return QuizService.displayAnswers;
 			}, function() {
-				console.log("answer displayed...");
 				angular.forEach(scope.qna, function(qna) {
 					var i = 0;
 					angular.forEach(qna.options, function(option) {
-						console.log(option.text);
 						if (option.correct === true
 								&& QuizService.displayAnswers === true) {
 							qna.options[i].style = "background-color:#ffff00";
@@ -183,6 +181,6 @@ quizApp.directive("iquestion", [ 'QuizService', function( QuizService ) {
 			});
 
 		},
-		templateUrl : 'templates/question.html'
+		templateUrl : currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + 'templates/question.html'
 	};
 }]);
