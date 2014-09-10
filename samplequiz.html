@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html ng-app="HelloQuiz">
+<head>
+  <title>Hello Quiz</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<body class="container">
+  <div>
+    <iquiz summary="This is my first quiz"></iquiz>
+  </div>
+  <hr/>
+  <table style="width:100%">
+    <tr>
+      <td style="width:70%;vertical-align:top">
+        <iquestion text="In which year, did the first world war start?::1912;1913;__1914;1915"></iquestion>
+        <iquestion text="In which year, did the second world war start?::1937;__1939;1941;1943"></iquestion>
+      </td>
+      <td>
+        <iscorecard></iscorecard>
+      </td>
+    </tr>
+  </table>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-sanitize.min.js"></script>
+  <script src="quizapp/quizapp-v0.2.js"></script>
+  <script src="quizapp/ui-bootstrap-tpls-0.9.0.min.js"></script>
+  <script>
+    angular.module( "HelloQuiz", ["QuizApp"]);
+  </script>
+</body>
+</html>
