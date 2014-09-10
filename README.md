@@ -78,4 +78,7 @@ Directive iscorecard is used to display the scores and correct answers. It just 
 
 ### QuickStart
 
-Double-click on the samplequiz.html to see the quick sample.
+* The samplequiz.html presents sample code in line with instructions written above. It needs a webserver to run.
+* Copy the samplequiz.html and src folder content on a location, say, quizdemo, on your webserver.
+* Access samplequiz.html in a browser.
+
