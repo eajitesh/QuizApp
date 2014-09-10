@@ -76,7 +76,7 @@ Directive iscorecard is used to display the scores and correct answers. It just 
   * iquestion
   * iscorecard
 
-*** QuickStart
+### QuickStart
 
 * Create a quizdemo folder
 * Place samplequiz.html file (downloaded with zip) within it.
