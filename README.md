@@ -63,10 +63,22 @@ Directive iscorecard is used to display the scores and correct answers. It just 
   * angular.min.js
   * angular-sanitize.min.js
 * Include bootstrap CSS library. This would make sure that the templates display neat looking HTML blocks. You may change classes in the template files to display the template differently. You may want to use <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" target="_blank">Bootstrap CDN link</a> in your page.
+* Include following CSS and script files within your HTML <Head> section. Script files can as well be added within BODY section for performance reasons.
+   * `<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">`
+   * `<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>`
+   * `<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-sanitize.min.js"></script>`
+   * `<script src="quizapp/quizapp-v0.2.js"></script>`. The assumption is that you have copied the downloaded file within **quizapp** folder as instructed above.
+   * `<script src="quizapp/ui-bootstrap-tpls-0.9.0.min.js"></script>`. The assumption is that you have copied the downloaded file within **quizapp** folder as instructed above.
 * In the page, you want to use the module, define the angular app with QuizApp as dependency. The code would look like following:
   `angular.module( "HelloApp", ["QuizApp"] );`
 * Once done with above, you are all set to use following three directives:
   * iquiz
   * iquestion
   * iscorecard
-  
+
+*** QuickStart
+
+* Create a quizdemo folder
+* Place samplequiz.html file (downloaded with zip) within it.
+* Create quizapp folder and place entire js & templates files (downloaded with zip) within this folder.
+* Access samplequiz.html file in a browser.
