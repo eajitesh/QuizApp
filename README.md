@@ -58,10 +58,10 @@ Directive iscorecard is used to display the scores and correct answers. It just 
   * templates/quiz.html: This file is a template to display iquiz directive.
   * templates/question.html: This file is a template to display iquestion directive.
   * templates/scorecard.html: This file is a template to display scorecard.
-* Include following angularjs script files. You may want to load the files from Google Hosted Libraries.
+* Include following angularjs script files. You may want to load the files from <a href="https://developers.google.com/speed/libraries/devguide#angularjs" target="_blank">Google Hosted Libraries</a>.
   * angular.min.js
   * angular-sanitize.min.js
-* Include bootstrap CSS library. 
+* Include bootstrap CSS library. This would make sure that the templates display neat looking HTML blocks. You may change classes in the template files to display the template differently. You may want to use <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" target="_blank">Bootstrap CDN link</a> in your page.
 * In the page, you want to use the module, define the angular app with QuizApp as dependency. The code would look like following:
   `angular.module( "HelloApp", ["QuizApp"] );`
 * Once done with above, you are all set to use following three directives:
