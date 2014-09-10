@@ -1,0 +1,28 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h2 class="panel-title">Score Card</h2>
+	</div>
+	<div class="panel-body">
+	  <!--
+    <h5>Test complexity: <b>{{testComplexity}}</b></h5>
+    -->
+    <h5>
+      Total no. of questions: <b>{{totalQuestions}}</b>
+    </h5>
+    <h5>
+      No. of questions attempted: <b>{{questionsAttempted}}</b>
+    </h5>
+    <div ng-show="showscores"  style="padding-top:0px">
+      <h5>
+      No. of correct answers: <b>{{correctAnswers}}</b>
+    </h5>
+    <h5>
+      Overall score: <b>{{score}}/{{totalQuestions}}</b>
+    </h5>
+    </div>
+    <div style="padding-top:10px">
+      <input type="button" class="btn btn-sm btn-success" name="score" value="Show Score" ng-click="showScores()"/>
+      <input type="button" class="btn btn-sm btn-warning" name="rightanswer" value="Show Answers" ng-click="showAnswers()"/>
+    </div>
+  </div>
+</div>
