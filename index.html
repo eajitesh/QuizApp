@@ -28,7 +28,7 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <p>The sole purpose of this app is to allow users to create quick quizzes comprising of objective questions without getting bothered about HTML aspect. In its current version, objective questions with just one answers is supported. In future versions, there will be support for multiple currect answers out of given options. </p>
+          <p>The sole purpose of this app is to allow users to create quick quizzes comprising of multiple-choice objective questions without getting bothered about HTML aspect. <strong>The current version supports objective questions with just one answer</strong>. In future versions, there will be support for multiple correct answers out of given options. </p>
 
 <p>It uses the <strong><a href="http://www.angularjs.org" target="__blank">AngularJS</a></strong> extensively to achieve the above objective. Following are key directives that are used to create the quiz:</p>
 
@@ -36,7 +36,7 @@
 <li>iquiz</li>
 <li>iquestion</li>
 <li>iscorecard</li>
-</ul><p>Following represents the details on above directive:</p>
+</ul><p>Following represents the details on above directives:</p>
 
 <h3>
 <a name="directive-iquiz" class="anchor" href="#directive-iquiz"><span class="octicon octicon-link"></span></a>Directive: iquiz</h3>
@@ -83,6 +83,42 @@
 <p>Directive iscorecard is used to display the scores and correct answers. It just consists of "iscorecard" as element tag name. The code looks like following:</p>
 
 <p><code>&lt;iscorecard&gt;&lt;/iscorecard&gt;</code></p>
+
+<h3>
+<a name="installation-instructions" class="anchor" href="#installation-instructions"><span class="octicon octicon-link"></span></a>Installation Instructions</h3>
+
+<ul>
+<li>Download the zip file, unzip it,</li>
+<li>Following are different files that could be found:
+
+<ul>
+<li>quizapp-v0.2.js: This file consists of actual AngularJS code including directives</li>
+<li>ui-bootstrap-tpls-0.9.0.min.js: This is included as dependency of QuizApp to style the templates using Bootstrap library. </li>
+<li>templates/quiz.html: This file is a template to display iquiz directive.</li>
+<li>templates/question.html: This file is a template to display iquestion directive.</li>
+<li>templates/scorecard.html: This file is a template to display scorecard.</li>
+</ul>
+</li>
+<li>Include following angularjs script files. You may want to load the files from <a href="https://developers.google.com/speed/libraries/devguide#angularjs" target="_blank">Google Hosted Libraries</a>.
+
+<ul>
+<li>angular.min.js</li>
+<li>angular-sanitize.min.js</li>
+</ul>
+</li>
+<li>Include bootstrap CSS library. This would make sure that the templates display neat looking HTML blocks. You may change classes in the template files to display the template differently. You may want to use <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" target="_blank">Bootstrap CDN link</a> in your page.</li>
+<li>In the page, you want to use the module, define the angular app with QuizApp as dependency. The code would look like following:
+<code>angular.module( "HelloApp", ["QuizApp"] );</code>
+</li>
+<li>Once done with above, you are all set to use following three directives:
+
+<ul>
+<li>iquiz</li>
+<li>iquestion</li>
+<li>iscorecard</li>
+</ul>
+</li>
+</ul>
         </section>
 
         <aside id="sidebar">
