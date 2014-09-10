@@ -39,6 +39,9 @@ function Quiz() {
 	};
 }
 
+var scripts = document.getElementsByTagName("script")
+var currentScriptPath = scripts[scripts.length-1].src;
+
 quizApp.directive("iquiz", function() {
 	return {
 		restrict : 'E',
