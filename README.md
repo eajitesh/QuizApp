@@ -1,11 +1,11 @@
-The sole purpose of this app is to allow users to create quick quizzes comprising of objective questions without getting bothered about HTML aspect. In its current version, objective questions with just one answers is supported. In future versions, there will be support for multiple currect answers out of given options. 
+The sole purpose of this app is to allow users to create quick quizzes comprising of multiple-choice objective questions without getting bothered about HTML aspect. **The current version supports objective questions with just one answer**. In future versions, there will be support for multiple correct answers out of given options. 
 
 It uses the **<a href="http://www.angularjs.org" target="__blank">AngularJS</a>** extensively to achieve the above objective. Following are key directives that are used to create the quiz:
 * iquiz
 * iquestion
 * iscorecard
 
-Following represents the details on above directive:
+Following represents the details on above directives:
 
 ### Directive: iquiz
 
@@ -49,4 +49,23 @@ Directive iscorecard is used to display the scores and correct answers. It just 
 
 `<iscorecard></iscorecard>`
 
+### Installation Instructions
 
+* Download the zip file, unzip it,
+* Following are different files that could be found:
+  * quizapp-v0.2.js: This file consists of actual AngularJS code including directives
+  * ui-bootstrap-tpls-0.9.0.min.js: This is included as dependency of QuizApp to style the templates using Bootstrap library. 
+  * templates/quiz.html: This file is a template to display iquiz directive.
+  * templates/question.html: This file is a template to display iquestion directive.
+  * templates/scorecard.html: This file is a template to display scorecard.
+* Include following angularjs script files. You may want to load the files from Google Hosted Libraries.
+  * angular.min.js
+  * angular-sanitize.min.js
+* Include bootstrap CSS library. 
+* In the page, you want to use the module, define the angular app with QuizApp as dependency. The code would look like following:
+  `angular.module( "HelloApp", ["QuizApp"] );`
+* Once done with above, you are all set to use following three directives:
+  * iquiz
+  * iquestion
+  * iscorecard
+  
